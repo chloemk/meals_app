@@ -22,7 +22,10 @@ class CategoriesScreen extends StatelessWidget {
         children: dummyCategories
             .map(
               (categoryData) => CategoryItem(
-                  title: categoryData.title, color: categoryData.color),
+                title: categoryData.title,
+                color: categoryData.color,
+                id: categoryData.id,
+              ),
             )
             .toList(),
       ),
