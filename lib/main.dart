@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app/category_meals_screen.dart';
 
-import './categories_screen.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -33,8 +31,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.pink)
             .copyWith(secondary: Colors.amber),
       ),
-      home: const CategoriesScreen(),
-      routes: {'/category-meals': (ctx) => CategoryMealsScreen()},
+      routes: {
+        '/': (ctx) => const CategoryMealsScreen(),
+        CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen()
+      },
     );
   }
 }
