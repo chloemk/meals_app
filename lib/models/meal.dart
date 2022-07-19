@@ -1,5 +1,6 @@
-import 'package:meals_app/models/Complexity.dart';
-import 'package:meals_app/models/affordability.dart';
+import 'package:meals_app/enums/affordability.dart';
+
+import '../enums/complexity1.dart';
 
 class Meal {
   final String id;
@@ -16,7 +17,7 @@ class Meal {
   final bool isVegan;
   final bool isVegetarian;
 
-  Meal({
+  const Meal({
     required this.id,
     required this.categories,
     required this.title,
