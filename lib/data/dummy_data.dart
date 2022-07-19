@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import './models/category.dart';
-import 'enums/affordability.dart';
-import 'enums/complexity.dart';
-import 'models/meal.dart';
+import '../enums/affordability.dart';
+import '../enums/complexity.dart';
+import '../models/category.dart';
+import '../models/meal.dart';
 
 const dummyCategories = [
   Category(
