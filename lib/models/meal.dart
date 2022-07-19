@@ -1,6 +1,6 @@
 import 'package:meals_app/enums/affordability.dart';
 
-import '../enums/complexity1.dart';
+import '../enums/complexity.dart';
 
 class Meal {
   final String id;
